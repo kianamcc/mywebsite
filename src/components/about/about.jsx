@@ -30,7 +30,7 @@ export default function About() {
             </div>
 
             <div className="imgContainer">
-                    <img src={process.env.PUBLIC_URL + "/assets/yume1.jpg"} alt="" />
+                    <img src={process.env.PUBLIC_URL + "/assets/yume1.JPG"} alt="" />
             </div>
         </div>
 

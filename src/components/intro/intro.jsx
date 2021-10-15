@@ -24,7 +24,7 @@ export default function Intro() {
                 </div>
             </div> */}
             <div className="background">
-                <img src={process.env.PUBLIC_URL + "/assets/bkg5.jpg"} alt="" />
+                <img src={process.env.PUBLIC_URL + "/assets/bkg5.JPG"} alt="" />
             </div>
             
             <div className="right">

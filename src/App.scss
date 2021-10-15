@@ -1,0 +1,25 @@
+.app {
+    height: 100vh;
+    overflow: hidden;
+
+    .sections {
+        width: 100%;
+        height: calc(100vh - 90px);
+        position: relative;
+        top: 100px; // start after the 100px topbar
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+        &::-webkit-scrollbar { // get rid of scrollbar
+            display: none;
+        }
+        .example {
+            -ms-overflow-style: none;
+          }
+
+        > *{ // for each section
+            width: 100vw;
+            height: calc(100vh - 90px);
+            scroll-snap-align: start;
+        }
+    }
+}

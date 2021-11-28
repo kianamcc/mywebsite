@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .carousel {
     width: 60%;
     height: 700px;
@@ -7,6 +9,10 @@
     align-items: center;
     justify-content: center;
     position: relative;  
+
+    .title {
+        flex-direction: column;
+    }
 }
 
 .carouselInner {
@@ -14,17 +20,24 @@
     width: 80%;
     background-color: white;
     border-radius: 10px;
-    background-position: center;
+    // background-position: center;
+    background-position: bottom 0px right 52px;
     background-repeat: no-repeat;
-    background-size: 88% 100%;
+    // background-size: 88% 100%;
+    background-size: 50% 100%;
+
     display: flex;
     transition: all 0.7s ease;
+
+    @include mobile {
+        background-position: center;
+        background-size: cover;
+    }
 
     .left {
         flex: 5%;
         height: 100%;
         background-color: #A8DADC;
-        // opacity: 0.3;
         display: grid; // center icon
         place-items: center;
         color: white;
@@ -35,25 +48,57 @@
         flex: 80%;
         height: 100%;
         display: grid;
-        place-items: center;
-        text-align: justify;
-        text-align: center;
+        place-items: left;
+        text-align: left;
+
+        @include mobile {
+            place-items: center;
+            text-align: center;
+            flex: 85%;
+            height: 90%;
+        }
 
         h1 {
-            font-size: 2.5rem;
-            background-color: rgba(255, 255, 255, 0.8);
+            // font-size: 2.5rem;
+            font: bold;
+            font-size: 2.5vw;
+            background-color: rgba(255, 255, 255, 0.7);
             padding: 20px;
-            border-radius: 10px;
+            border-radius: 12px;
             font-weight: 700;
+            width: 40%;
+            margin-left: 10px;
+            margin-top: 10px;
+            overflow: hidden !important;
+
+            @include mobile {
+                margin-left: 0px;
+                margin-top: 10px;
+                margin-bottom: 22px;
+                padding: 10px;
+                font-size: 2.0rem;
+                width: 90%;
+                background-color: rgba(255, 255, 255, 0.8);
+            }
         }
 
         p {
-            width: 80%;
             margin-bottom: 140px;
             font-size: 1.2rem;
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: rgba(255, 255, 255, 0.7); // text background color
             padding: 20px;
-            border-radius: 10px;
+            border-radius: 20px;
+            width: 40%;
+            height: 95%;
+            margin-left: 10px;
+
+            @include mobile {
+                margin: 0px;
+                font-size: 1.0rem;
+                width: 90%;
+                margin-bottom: 40px;
+                background-color: rgba(255, 255, 255, 0.8);
+            }
         }
     }
 

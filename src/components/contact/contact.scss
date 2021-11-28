@@ -40,6 +40,7 @@
             font-size: 30px;
             overflow: hidden;
             margin-top: 60px;
+            font-weight: bold;
         }
 
         form {
@@ -56,8 +57,8 @@
                 margin-top: 10px;
 
                 @include mobile {
-                    width: 220px;
-                    height: 20px;
+                    width: 350px;
+                    height: 30px;
                 }
             }
 
@@ -68,8 +69,8 @@
                 margin-top: 10px;
 
                 @include mobile {
-                    width: 220px;
-                    height: 200px;
+                    width: 350px;
+                    height: 300px;
                 }
             }
 

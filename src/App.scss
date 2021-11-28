@@ -1,6 +1,9 @@
 .app {
     height: 100vh;
     overflow: hidden;
+    ::-webkit-scrollbar {
+        display: none;
+      }
 
     .sections {
         width: 100%;

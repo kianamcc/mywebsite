@@ -16,12 +16,12 @@ export const images = [
     },
     {
         title: "Password Checker",
-        img: process.env.PUBLIC_URL + "/assets/yume2.JPG",
+        img: process.env.PUBLIC_URL + "/assets/passwordchecker.png",
         desc: "A responsive portfolio website made using Reactjs and hosted on Github Pages."
     },
     {
         title: "Don't Die",
-        img: process.env.PUBLIC_URL + "/assets/img1.png",
+        img: process.env.PUBLIC_URL + "/assets/dontdie.png",
         desc: "Don't Die is a computer game made with C# on the Unity Engine. It is a 2D survival game made with a team of 5 including myself."
     },
     {

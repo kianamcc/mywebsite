@@ -16,7 +16,6 @@
         height: 700px;
         overflow-y: auto;
         overflow-x: auto;
-        
 
         img {
             width: 100%;
@@ -26,12 +25,10 @@
             overflow-x: hidden;
         }
 
-
         @include mobile {
             width: 100%;
             height: 100%;
             overflow: hidden;
-            
         }
     }
 
@@ -42,25 +39,12 @@
         align-items: center;
         justify-content: center;
         margin-top: -200px;
-        overflow: hidden;
-
-        @include mobile {
-            // width: 300px;
-            // height: 700px;
-            // // margin-top: -400px;
-        }
-        
+        overflow: hidden !important;
 
         h2 {
-            font-weight: 800px;
+            font-weight: bold;
             overflow: hidden;
             flex-direction: row;
-            // margin-top: 10px;
-
-            // @include mobile {
-            //     font-size: 15px;
-                
-            // }
         }
     
         p {
@@ -68,11 +52,20 @@
             margin-right: 100px;
             margin-left: 100px;
             overflow: hidden;
+            //overflow-x:visible;
+
+            @include mobile {
+                font-size: 2rem;
+                font: bold;
+                overflow: hidden;
+            }
+
         }
 
         a {
             overflow: hidden;
+            color: #457b9d;
+            font-weight: bold;
         }
     }
-
 }

@@ -24,6 +24,7 @@ export default function Carousel() {
     }
 
     return (
+        // <h2>Projects</h2>
         <div className="carousel" id="carousel">
             <div className="carouselInner" style={{backgroundImage: `url(${images[currentImg].img})`}}> 
                 {/* <img src={images[currentImg].img} /> */}

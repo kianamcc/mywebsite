@@ -7,7 +7,7 @@ import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 
 // use inline styling to set background img to url of current image we want to render
 
-export default function Carousel() {
+export default function Carousel() { 
 
     const [currentImg, setCurrentImg] = useState(0) // start at 0
 

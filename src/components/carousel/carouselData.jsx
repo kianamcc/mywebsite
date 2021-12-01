@@ -1,7 +1,7 @@
 export const images = [
     {
         title: "Cozy Cat Home",
-        img: process.env.PUBLIC_URL + "/assets/cozy.png",
+        img: process.env.PUBLIC_URL + "/assets/cozycat.png",
         desc: "Cozy Cat Home is a mobile game made with C# on the Unity Engine. It is a relaxing simulation game where you adopt cats from the shelter and take care of them. All art from font to background was made by me using Adobe Photoshop."
     },
     {
